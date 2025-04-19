@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+// Login component
+.login-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .login-box {
+        width: 33vw;
+        height: 50vh;
+        border-radius: 1rem;
+        border: 1px solid black;
+    }
+}
