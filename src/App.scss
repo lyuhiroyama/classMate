@@ -14,10 +14,21 @@
     width: 100vw;
     height: 100vh;
 
-    .login-box {
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 33vw;
         height: 50vh;
         border-radius: 1rem;
         border: 1px solid black;
+
+        .input-fields-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 50%;
+            gap: 1rem;
+        }
     }
 }
