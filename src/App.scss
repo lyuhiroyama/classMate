@@ -4,6 +4,36 @@
     box-sizing: border-box;
 }
 
+// Navbar component
+.navbar-component {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    .navbar {
+        width: 80%;
+        height: 2.5rem;
+        background-color: black;
+        margin: 1rem 0;
+        border-radius: 1rem;
+
+        ul {
+            height: inherit;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+
+            li {
+                color: white;
+                cursor: pointer;
+            }
+            li:hover {
+                color: grey;
+            }
+        }
+    }
+}
 
 
 // Login component
