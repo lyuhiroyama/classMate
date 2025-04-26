@@ -1,4 +1,5 @@
 $theme-color: #de7737;
+$sidebar-offset: 16rem;
 
 * {
     margin: 0;
@@ -29,6 +30,8 @@ $theme-color: #de7737;
         align-items: center;
         justify-content: center;
         width: 50%;
+        min-width: 300px;
+        max-width: 500px;
         height: 50%;
         background-color: black;
         margin: 1rem 0;
@@ -55,6 +58,21 @@ $theme-color: #de7737;
     }
 }
 
+// Sidebar component
+.sidebar-component {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: $sidebar-offset;
+    background-color: white;
+
+    .sidebar-title {
+        margin: 2rem;
+        color: black;
+        text-align: center;
+    }
+}
+
 // Login component
 .login-component {
     display: flex;
@@ -67,8 +85,7 @@ $theme-color: #de7737;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 33%;
-        min-width: 300px;
+        width: 300px;
         height: 50%;
         border-radius: 1rem;
         background-color: white;
@@ -89,12 +106,13 @@ $theme-color: #de7737;
                 gap: 0.5rem;
 
                 .input-labels {
-                    font-size: 10px;
+                    font-size: 11px;
                 }
 
                 input {
                     border: none;
                     border-bottom: 1px solid black;
+                    padding: 0.5rem;
                 }
                 input:focus {
                     border-bottom: 1px solid #de7737;
