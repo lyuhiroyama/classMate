@@ -60,6 +60,10 @@ $sidebar-offset: 16rem;
 
 // Sidebar component
 .sidebar-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     left: 0;
     height: 100%;
@@ -67,9 +71,27 @@ $sidebar-offset: 16rem;
     background-color: white;
 
     .sidebar-title {
-        margin: 2rem;
+        font-size: 2rem;
+        margin: 0 0 2rem;
         color: black;
         text-align: center;
+    }
+    .day-of-week-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        button {
+            border: none;
+            font-size: 2rem;
+            background-color: transparent;
+            border-radius: 2rem;
+            padding: 0.5rem 1rem;
+        }
+        button:hover {
+            background-color: grey;
+            cursor: pointer;
+        }
     }
 }
 
